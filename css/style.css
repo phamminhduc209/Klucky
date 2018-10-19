@@ -5,12 +5,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700');
 /*  Css */
-/* @import url(bootstrap.min.css);
-@import url(owl.carousel.min.css);
-@import url(font-awesome.min.css);
-@import url(icofont.css);
-@import url(animate.min.css);
-@import url(lightbox.min.css); */
+@import url(../lib/bootstrap/css/bootstrap.min.css);
 
 /*===== Layout Style =====*/
 body {
@@ -61,9 +56,6 @@ ul li,
 ol li {
     list-style: none;
 }
-.wrapper {
-    position: relative;
-}
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -73,48 +65,48 @@ h1, h2, h3, h4, h5, h6, p {
 *, ::after, ::before {
     box-sizing: border-box;
 }
+.wrapper {
+    position: relative;
+    background: url(../images/background.png) #41000c no-repeat top center;
+    height: 1357px;
+}
 
 /* Header */
 .kl_header {
+    background: rgba(43, 0, 10, 0.85);
+}
+.kl_header_ct {
     width: 1440px;
     margin: 0 auto;
-    background: #d98221;
-    padding: 0 15px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;    
+    position: relative;
 }
 .kl_logo {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%;
+    display: inline-block;
+    margin-right: .5rem!important;
 }
-
-.kl_menu {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%;
+.kl_menu {}
+.kl_menu_content {}
+.kl_menu_content .kl_menu_item {
+    display: inline-block;
+    vertical-align: middle
 }
-.kl_menu_content {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
+/* .kl_menu_content .kl_menu_item:after {
+    content: "";
+    width: 1px;
+    height: 110px;
+    display: block;
+    background: rgb(116, 0, 6);
+} */
+.kl_menu_content .kl_menu_item:last-child {
+    border-right: none;
 }
-.kl_menu_content li .kl_menu_link {
-    padding-right: .5rem;
-    padding-left: .5rem;
+.kl_menu_content .kl_menu_item .kl_menu_link {
+    padding-right: 40px;
+    padding-left: 40px;
     color: rgba(255, 236, 141, 0.15);
+    font-size: 32px;
 }
-.kl_menu_content li .kl_menu_link:hover,
-.kl_menu_content li .kl_menu_active {
+.kl_menu_content .kl_menu_item .kl_menu_link:hover,
+.kl_menu_content .kl_menu_item .kl_menu_active {
     color: #ffec8d;
 }
