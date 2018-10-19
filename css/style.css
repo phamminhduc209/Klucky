@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*===== Import Files =====*/
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700');
+/*  Css */
+/* @import url(bootstrap.min.css);
+@import url(owl.carousel.min.css);
+@import url(font-awesome.min.css);
+@import url(icofont.css);
+@import url(animate.min.css);
+@import url(lightbox.min.css); */
+
+/*===== Layout Style =====*/
+body {
+    max-width: 1920px;
+    background: transparent;
+    font-family: 'Cabin', sans-serif;
+    line-height: 1.15;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    transition: all 0.25s;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+select:focus, button:focus, input:focus { outline: none; }
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea, select, input[type="number"],
+input[type="tel"] {
+    padding: 8px 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+ul li,
+ol li {
+    list-style: none;
+}
+.wrapper {
+    position: relative;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+.clearfix {
+    clear: both;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/* Header */
+.kl_header {
+    width: 1440px;
+    margin: 0 auto;
+    background: #d98221;
+    padding: 0 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;    
+}
+.kl_logo {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.kl_menu {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.kl_menu_content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.kl_menu_content li .kl_menu_link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: rgba(255, 236, 141, 0.15);
+}
+.kl_menu_content li .kl_menu_link:hover,
+.kl_menu_content li .kl_menu_active {
+    color: #ffec8d;
+}
