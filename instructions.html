@@ -39,7 +39,7 @@
                         <img src="images/Logo.png" alt="Klucky">
                     </a>
                 </div>
-                <div class="kl_menu">
+                <div class="kl_menu kl_menu_desktop">
                     <ul class="kl_menu_content">
                         <li class="kl_menu_item"><a href="index.html" class="kl_menu_link" title="Trang Chủ">Trang Chủ</a></li>
                         <li class="kl_menu_item"><a href="rewards.html" class="kl_menu_link" title="Cơ Cấu Giải">Cơ Cấu Giải</a></li>
@@ -48,6 +48,20 @@
                         <li class="kl_menu_item"><a href="contact.html" class="kl_menu_link" title="Liên Hệ">Liên Hệ</a></li>
                     </ul>
                 </div>
+                <div class="kl_menu kl_menu_mobile">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Trang chủ
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Trang Chủ</a>
+                            <a class="dropdown-item" href="#">Cơ Cấu Giải</a>
+                            <a class="dropdown-item" href="#">Thể Lệ</a>
+                            <a class="dropdown-item" href="#">Hướng Dẫn</a>
+                            <a class="dropdown-item" href="#">Liên Hệ</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- Header -->
@@ -55,7 +69,7 @@
             <div class="kl_content clearfix">
                 <div class="kl_content_left">
                     <ul>
-                        <li class="kl_content_item active">
+                        <li class="kl_content_item kl_content_item_active">
                             <a href="#" title="" class="kl_content_link">Cách quay số</a>
                         </li>
                         <li class="kl_content_item">
@@ -168,8 +182,23 @@
 
     <!-- ===== JS ===== -->
     <script src="js/jquery.min.js"></script>
+    
+    <script src="lib/bootstrap/js/popper.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <!-- Js Common -->
-    <script src="js/main.js"></script> 
+    <script src="js/main.js"></script>
+    // <script>
+    //     $('.kl_content_left ul').on("click", ".kl_content_item_active", function() {
+    //         $(this).closest("ul").children('.kl_content_item:not(.kl_content_item_active)').toggle();
+    //     });
+
+    //     var allOptions = $("ul").children('.kl_content_item:not(.kl_content_item_active)');
+    //     $(".kl_content_left ul").on("click", ".kl_content_item:not(.kl_content_item_active)", function() {
+    //         allOptions.removeClass('selected');
+    //         $(this).addClass('selected');
+    //         $(".kl_content_left ul").children('.kl_content_item_active').html($(this).html());
+    //         allOptions.toggle();
+    //     });
+    // </script>
 </body>
 </html>

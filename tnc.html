@@ -55,7 +55,7 @@
             <div class="kl_content clearfix">
                 <div class="kl_content_left">
                     <ul>
-                        <li class="kl_content_item active">
+                        <li class="kl_content_item kl_content_item_active">
                             <a href="#" title="" class="kl_content_link">Điều Kiện Tham Gia</a>
                         </li>
                         <li class="kl_content_item">
@@ -170,6 +170,19 @@
     <script src="js/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <!-- Js Common -->
-    <script src="js/main.js"></script> 
+    <script src="js/main.js"></script>
+    <script>
+        $('.kl_content_left ul').on("click", ".kl_content_item_active", function() {
+            $(this).closest("ul").children('.kl_content_item:not(.kl_content_item_active)').toggle();
+        });
+
+        var allOptions = $("ul").children('.kl_content_item:not(.kl_content_item_active)');
+        $(".kl_content_left ul").on("click", ".kl_content_item:not(.kl_content_item_active)", function() {
+            allOptions.removeClass('selected');
+            $(this).addClass('selected');
+            $(".kl_content_left ul").children('.kl_content_item_active').html($(this).html());
+            allOptions.toggle();
+        });
+    </script>
 </body>
 </html>

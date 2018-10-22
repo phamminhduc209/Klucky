@@ -161,8 +161,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /* ***** Modal ***** */
-.kl_modal {
-    max-width: 950px;
+@media (min-width: 768px) {
+    .kl_modal {
+        max-width: 950px;
+    }
 }
 .kl_modal .kl_modal_content {
     border-style: solid;
@@ -205,7 +207,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .kl_btn_close_modal {
-    padding: 10px 15px 0;
+    padding: 15px 15px 0;
 }
 .kl_btn_close_modal .close {
     opacity: 1;
@@ -403,6 +405,12 @@ h1, h2, h3, h4, h5, h6, p {
 .kl_autoplay_style .slick-prev:before {
     content: url(../images/arrow-point-to-left.png);
 }
+.kl_autoplay_style .slick-list {
+    padding: 0 90px;
+}
+.kl_autoplay_style .slick-slide img {
+    width: 100%;
+}
 
 /* Item Gift */
 .kl_listGift .row {
@@ -493,7 +501,7 @@ h1, h2, h3, h4, h5, h6, p {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
-.kl_content_item.active,
+.kl_content_item.kl_content_item_active,
 .kl_content_item:hover {
     background: #d98221;
     transition: all 0.4s ease-out 0s;
@@ -501,7 +509,7 @@ h1, h2, h3, h4, h5, h6, p {
     -o-transition: all 0.4s ease-out 0s;
     -ms-transition: all 0.4s ease-out 0s;
 }
-.kl_content_item.active .kl_content_link,
+.kl_content_item.kl_content_item_active .kl_content_link,
 .kl_content_item:hover .kl_content_link {
     color: #000;
     transition: all 0.4s ease-out 0s;
@@ -966,9 +974,164 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-transform: matrix( 1.06700916221818,0,0,1.06363293251093,0,0);
     -ms-transform: matrix( 1.06700916221818,0,0,1.06363293251093,0,0);
 }
-.slick-list {
-    padding: 0 90px;
+
+.kl_menu_desktop {
+    display: block;
 }
-.slick-slide img {
-    width: 100%;
+.kl_menu_mobile {
+    display: none;
+}
+
+/* ***** RESPONSIVE ***** */
+/* ***** Menu ***** */
+@media (max-width: 1366px) {
+    .wrapper2 {
+        width: auto;
+    }
+    .kl_menu_content .kl_menu_item .kl_menu_link {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .kl_menu_content .kl_menu_item:after {
+        top: -15px;
+        height: 60px;
+    }
+}
+@media (max-width: 1024px) {
+    .kl_menu_desktop {
+        display: none;
+    }
+    .kl_menu_mobile {
+        display: block;
+    }
+}
+/* Modal */
+@media (max-width: 767px) and (min-width: 577px) {
+    .kl_modal {
+        max-width: 650px;
+    }
+}
+@media (max-width: 767px) {
+    .wrapper2 {
+        width: auto;
+    }
+    .kl_hide_moblie {
+        display: none;
+    }
+    .kl_modal_submit .kl_modal_title_size {
+        font-size: 32px;
+    }
+    .kl_modal_betterlucknexttime .kl_modal_title_size {
+        font-size: 35px;
+    }
+    .kl_modal_getNumber .kl_modal_title_size {
+        font-size: 35px;
+    }
+    .kl_modal_information .kl_modal_title_size {
+        font-size: 35px;
+    }
+    .kl_modal_prizes .kl_modal_title {
+        font-size: 38px;
+    }
+    .kl_formInformation {
+        padding: 0 50px;
+    }
+    .kl_formInformation .kl_form_name,
+    .kl_formInformation .kl_form_field {
+        flex: auto;
+        max-width: 100%;
+    }
+    .kl_formInformation .form-inline_col {
+        width: 50%;
+        text-align: left !important;
+        padding-left: 0 !important;
+        padding: 0 5px;
+    }
+    .kl_formInformation .form-inline_col .kl_form_input {
+        width: 100%;
+    }
+    .kl_register .btn-group .kl_btn {
+        width: 248px;
+    }
+    .kl_modal_prizes .kl_text_yellow {
+        font-size: 47px;
+    }
+    .kl_modal_submit .kl_modal_title_size {
+        font-size: 32px;
+    }
+    .kl_chat,
+    .kl_shareFB {
+        display: none;
+    }
+    /* Contact */
+    .kl_main_contact:after {
+        display: none;
+    }
+    .kl_main2_contact {
+        padding-top: 190px;
+        width: auto;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .kl_main_contact_ct {
+        width: auto;
+    }
+    .kl_text_contact {
+        font-size: 32px;
+        text-align: center;
+    }
+    .kl_main_contact .kl_btn {
+        width: 332px;
+        height: 87px;
+        line-height: 87px;
+    }
+    .kl_main_contact .kl_btn span {
+        font-size: 30px;
+    }
+    .kl_contactNow p {
+        font-size: 11.696px;
+    }
+    .kl_contactNow_ct {
+        padding: 0 40px;
+        margin-top: 30px;
+    }
+
+    /* Rewards */
+    .kl_main2 {
+        width: auto;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .kl_autoplay_style .slick-list {
+        padding: 0 100px 0 0;
+    }
+    .kl_autoplay_style:before {
+        display: none;
+    }
+    .kl_autoplay_style .slick-prev {
+        display: none !important;
+    }
+    .kl_autoplay_style .slick-next {
+        right: 25px;
+        z-index: 99999;
+    }
+    .kl_rewards_title {
+        padding: 0 30px;
+    }
+    .kl_listGift .kl_Giftitem {
+        width: calc(100% / 3);
+    }
+
+    /* ***** Tnc - Intructions ***** */
+    .kl_content .kl_content_left {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3px;
+        max-height: none;
+    }
+    .kl_content .kl_content_right {
+        width: 100%;
+    }
+
+    .kl_content_item:not(.kl_content_item_active) {display: none;}
 }
