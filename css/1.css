@@ -4,7 +4,18 @@
 /*===== Import Files =====*/
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700');
-@import url(../font/icielBrandonText/stylesheet.css);
+@font-face {
+    font-family: 'iCielBrandonText';
+    src: url('../font/icielBrandonText/iCielBrandonText-Bold.eot');
+    src: url('../font/icielBrandonText/iCielBrandonText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/icielBrandonText/iCielBrandonText-Bold.woff2') format('woff2'),
+        url('../font/icielBrandonText/iCielBrandonText-Bold.woff') format('woff'),
+        url('../font/icielBrandonText/iCielBrandonText-Bold.ttf') format('truetype'),
+        url('../font/icielBrandonText/iCielBrandonText-Bold.svg#iCielBrandonText-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
 /*  Css */
 @import url(../lib/bootstrap/css/bootstrap.min.css);
 @import url(../lib/slick/slick.css);
@@ -183,7 +194,6 @@ h1, h2, h3, h4, h5, h6, p {
     padding-bottom: 30px;
 }
 .kl_modal_title {
-    font-family: "iCielBrandonText";
     font-weight: bold;
     background: -webkit-gradient(linear, left top, right top, from(#5f4406), color-stop(6%, #ffe49d), color-stop(11%, #ffe49d), color-stop(25%, #dbb570), color-stop(29%, #ffe49d), color-stop(30%, #ffe49d), color-stop(32%, #fef0cf), color-stop(33%, #dbb570), color-stop(35%, #ffe49d), color-stop(41%, #ffe49d), color-stop(69%, #eedcb1), color-stop(73%, #fef0cf), color-stop(80%, #eedcb1), color-stop(86%, #ffe49d), color-stop(93%, #ffe49d), color-stop(94%, #dbb570));
     background: linear-gradient(90deg, #5f4406 0%, #ffe49d 6%, #ffe49d 11%, #dbb570 25%, #ffe49d 29%, #ffe49d 30%, #fef0cf 32%, #dbb570 33%, #ffe49d 35%, #ffe49d 41%, #eedcb1 69%, #fef0cf 73%, #eedcb1 80%, #ffe49d 86%, #ffe49d 93%, #dbb570 94%); 
@@ -282,7 +292,6 @@ h1, h2, h3, h4, h5, h6, p {
 .kl_modal_betterlucknexttime .kl_modal_title_size {
     font-size: 48px;
     margin-bottom: 30px;
-    font-family: "icielBrandonText";
 }
 .kl_modal_betterlucknexttime .kl_modal_video {
     margin: 0 auto 25px;
@@ -298,7 +307,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Modal Information */
 .kl_modal_information .kl_modal_title_size {
-    font-family: "icielBrandonText";
     font-size: 48px;
     margin-bottom: 30px;
 }
@@ -341,12 +349,6 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 44px;
 }
 
-/* Get Number */
-.kl_modal_getNumber .kl_modal_title_size {
-    font-size: 48px;
-    font-family: "icielBrandonText";
-}
-
 
 /* ***** wrapper2 ***** */
 .wrapper2 {
@@ -370,7 +372,7 @@ h1, h2, h3, h4, h5, h6, p {
 .kl_autoplay_style {
     position: relative;
 }
-.kl_autoplay_style:before,
+/*.kl_autoplay_style:before,
 .kl_autoplay_style:after {
     content: "";
     position: absolute;
@@ -387,7 +389,7 @@ h1, h2, h3, h4, h5, h6, p {
 .kl_autoplay_style:after {
     background-image: linear-gradient(to left, #630600, rgba(99, 6, 0, 0.6), rgba(255,0,0,0));
     right: -1px;
-}
+}*/
 .kl_slider .kl_slide_item {
     padding: 0 5px;
 }
@@ -677,10 +679,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .kl_contactNow ul li:last-child {
     margin: 0;
-}
-.kl_contactNow ul li img {
-    display: inline-block;
-    vertical-align: middle;
 }
 .kl_contactNow ul li span {
     margin-left: 20px;
@@ -972,3 +970,7 @@ h1, h2, h3, h4, h5, h6, p {
 .slick-slide img {
     width: 100%;
 }
+
+
+
+/***** Responsive *****/
