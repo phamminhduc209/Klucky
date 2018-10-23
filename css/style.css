@@ -1396,10 +1396,15 @@ h1, h2, h3, h4, h5, h6, p {
         font-size: 20px;
     }
     .kl_main_contact {
-        padding: 25px;
+        padding: 10px;
+    }
+    .kl_contactNow ul li span {
+        margin-left: 5px;
+        font-size: 12px;
     }
     .kl_text_contact {
         font-size: 20px;
+        margin-bottom: 0;
     }
     .kl_contactNow p {
         font-size: 6px;
@@ -1423,14 +1428,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
-@media (max-width: 320px) {
-    .kl_contactNow p {
-        font-size: 4px;
-    }
-    .kl_contactNow_ct {
-        padding: 0;
-        margin-top: 30px;
-    }
+@media (max-width: 375px) {
     .kl_main_contact .kl_btn {
         width: auto;
         height: 70px;
@@ -1438,6 +1436,16 @@ h1, h2, h3, h4, h5, h6, p {
     }
     .kl_main_contact .kl_btn span {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .kl_contactNow p {
+        font-size: 4px;
+    }
+    .kl_contactNow_ct {
+        padding: 0;
+        margin-top: 30px;
     }
     .kl_btn {
         width: auto;
@@ -1476,13 +1484,17 @@ h1, h2, h3, h4, h5, h6, p {
     .kl_modal_betterlucknexttime .kl_btn {
         margin-top: 1rem!important;
     }
+    .kl_qrCode {
+        background: transparent;
+        width: auto;
+    }
 }
 
-/*.lucky-wrap .randomizer-wrap .random-input span {
+.lucky-wrap .randomizer-wrap .random-input span {
     position: relative;
 }
 .lucky-wrap .randomizer-wrap .random-input span:before {
-    content: url(../images/ChiChi.png);
+    content: url(../images/linear.png);
     display: block;
     position: absolute;
     top: 0;
@@ -1493,7 +1505,7 @@ h1, h2, h3, h4, h5, h6, p {
     animation-timing-function: linear;
 }
 .lucky-wrap .randomizer-wrap .random-input span:after {
-    content: url(../images/ChiChi.png);
+    content: url(../images/linear.png);
     display: block;
     position: absolute;
     bottom: 0;
@@ -1520,4 +1532,3 @@ h1, h2, h3, h4, h5, h6, p {
     from {right: 0px;}
     to {right: 600px;}
 }
-*/
