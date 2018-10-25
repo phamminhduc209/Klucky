@@ -12,7 +12,7 @@
 
 /*===== Layout Style =====*/
 body {
-    background: #48010e;
+    background: url(../images/bg_body.jpg) #3c0701;
     font-family: 'Cabin', sans-serif;
     line-height: 1.15;
     font-size: 14px;
@@ -21,6 +21,10 @@ body {
     overflow-x: hidden;
     margin: 0 auto;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
 }
 a {
     cursor: pointer;
@@ -76,8 +80,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .wrapper {
     position: relative;
-    background: url(../images/background.png) #41000c no-repeat top center;
-    height: 1357px;
+    background: url(../images/background.png) no-repeat top center;
+    /*height: 100vh;*/
 }
 .kl_table {
     display: table;
@@ -165,11 +169,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /* ***** Modal ***** */
-@media (min-width: 768px) {
-    .kl_modal {
-        max-width: 950px;
-    }
-}
 .kl_modal .kl_modal_content {
     border-style: solid;
     border-width: 1px;
@@ -357,11 +356,8 @@ h1, h2, h3, h4, h5, h6, p {
 /* ***** wrapper2 ***** */
 .wrapper2 {
     background: url("../images/background_2.png");
-    height: 1331px;
     max-width: 1440px;
-    margin: 0 auto;
     height: 1331px;
-    width: 1440px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -818,12 +814,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .lucky-wrap .randomizer-wrap .random-input input {
     border: none;
-    background: #5f4406;
-    background: -webkit-gradient(linear, left top, right top, from(#5f4406), color-stop(6%, #ffe49d), color-stop(11%, #ffe49d), color-stop(25%, #dbb570), color-stop(29%, #ffe49d), color-stop(30%, #ffe49d), color-stop(32%, #fef0cf), color-stop(33%, #dbb570), color-stop(35%, #ffe49d), color-stop(41%, #ffe49d), color-stop(69%, #eedcb1), color-stop(73%, #fef0cf), color-stop(80%, #eedcb1), color-stop(86%, #ffe49d), color-stop(93%, #ffe49d), color-stop(94%, #dbb570));
-    background: linear-gradient(90deg, #5f4406 0%, #ffe49d 6%, #ffe49d 11%, #dbb570 25%, #ffe49d 29%, #ffe49d 30%, #fef0cf 32%, #dbb570 33%, #ffe49d 35%, #ffe49d 41%, #eedcb1 69%, #fef0cf 73%, #eedcb1 80%, #ffe49d 86%, #ffe49d 93%, #dbb570 94%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5f4406",endColorstr="#dbb570",GradientType=1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: transparent;
+    color: #e8c57e;
     font-size: 54.54px;
     font-weight: bold;
     text-align: center;
@@ -1095,16 +1087,30 @@ h1, h2, h3, h4, h5, h6, p {
         display: none;
     }
 }
+@media (max-width: 750px) {
+    #Zoom {
+        zoom: 1 !important;
+    }
+}
 
 /* Modal */
+@media (min-width: 768px) {
+    .kl_modal {
+        max-width: 950px;
+    }
+}
 @media (max-width: 767px) and (min-width: 577px) {
     .kl_modal {
         max-width: 650px;
     }
 }
 @media (max-width: 767px) {
+    body {
+        background: #5b0012;
+    }
     .wrapper2 {
         width: auto;
+        background: url(../images/bg2_mb.jpg);
     }
     .kl_hide_moblie {
         display: none;
@@ -1159,7 +1165,7 @@ h1, h2, h3, h4, h5, h6, p {
         display: none;
     }
     .kl_main2_contact {
-        padding-top: 190px;
+        padding-top: 160px;
         width: auto;
         padding-right: 30px;
         padding-left: 30px;
@@ -1192,6 +1198,7 @@ h1, h2, h3, h4, h5, h6, p {
         width: auto;
         padding-right: 30px;
         padding-left: 30px;
+        padding-top: 150px;
     }
     .kl_autoplay_style .slick-list {
         padding: 0 100px 0 0;
@@ -1503,6 +1510,7 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-animation-timing-function: linear;
     animation: lefttoright 5s infinite;
     animation-timing-function: linear;
+    display: none;
 }
 .lucky-wrap .randomizer-wrap .random-input span:after {
     content: url(../images/linear.png);
@@ -1514,6 +1522,7 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-animation-timing-function: linear;
     animation: righttoleft 5s infinite;
     animation-timing-function: linear;
+    display: none;
 }
 @-webkit-keyframes lefttoright {
     from {left: 0px;}
