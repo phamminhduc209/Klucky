@@ -128,21 +128,10 @@ h1, h2, h3, h4, h5, h6, p {
     -ms-flex-pack: center;
     justify-content: center;
 }
-.kl_menu_content {}
 .kl_menu_content .kl_menu_item {
     display: inline-block;
     vertical-align: middle;
     position: relative;
-}
- .kl_menu_content .kl_menu_item:after {
-    content: "";
-    width: 1px;
-    height: 110px;
-    display: block;
-    background: rgb(116, 0, 6);
-    position: absolute;
-    top: -35px;
-    right: 0;
 }
 .kl_menu_content .kl_menu_item:last-child:after {
     display: none;
@@ -151,20 +140,35 @@ h1, h2, h3, h4, h5, h6, p {
     border-right: none;
 }
 .kl_menu_content .kl_menu_item .kl_menu_link {
-    padding-right: 40px;
-    padding-left: 40px;
     color: rgba(255, 236, 141, 0.15);
     font-size: 32px;
+}
+.kl_menu_content .kl_menu_item {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 1px solid rgb(116, 0, 7);
 }
 .kl_menu_content .kl_menu_item .kl_menu_link:hover,
 .kl_menu_content .kl_menu_item .kl_menu_active {
     color: #ffec8d;
 }
-.kl_menu_content .kl_menu_item:first-child .kl_menu_link {
+.kl_menu_content .kl_menu_item:first-child {
     padding-left: 0;
 }
-.kl_menu_content .kl_menu_item:last-child .kl_menu_link {
+.kl_menu_content .kl_menu_item:last-child {
     padding-right: 0;
+}
+.kl_menu_content .kl_menu_item .kl_menu_link.kl_menu_active:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    bottom: -35px;
+    right: 0;
 }
 
 
@@ -1001,13 +1005,9 @@ h1, h2, h3, h4, h5, h6, p {
     .wrapper2 {
         width: auto;
     }
-    .kl_menu_content .kl_menu_item .kl_menu_link {
+    .kl_menu_content .kl_menu_item {
         padding-right: 25px;
         padding-left: 25px;
-    }
-    .kl_menu_content .kl_menu_item:after {
-        top: -15px;
-        height: 60px;
     }
 }
 @media (max-width: 1024px) {
@@ -1110,7 +1110,9 @@ h1, h2, h3, h4, h5, h6, p {
     }
     .wrapper2 {
         width: auto;
-        background: url(../images/bg2_mb.jpg);
+        background: url(../images/bg2_mb.jpg) no-repeat top center;
+        max-width: 750px;
+        height: auto;
     }
     .kl_hide_moblie {
         display: none;

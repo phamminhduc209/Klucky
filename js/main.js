@@ -4,12 +4,10 @@
     function Zoom() {
         var winHeight = $(window).height();
         var zoom = 1;
-        var transform = 1;
         var bodyMaxHeight = 1331;
         zoom = winHeight/bodyMaxHeight;
         $('#Zoom').css({
             'zoom': zoom,
-            'transform': zoom,
         });
     }
 
@@ -17,6 +15,19 @@
     Zoom();
     $(window).resize(function() {
         Zoom();
+    });
+
+    // Change viewport
+    function ChangeWiewport() {
+        if (screen.width < 750) {
+            $("#viewport").attr("content", "width=750");
+        }else{
+            $("#viewport").attr("content", "width=device-width, initial-scale=1");
+        }
+    }
+    ChangeWiewport();
+    $(window).resize(function() {
+        ChangeWiewport();
     });
 
     // Slider Rewards
