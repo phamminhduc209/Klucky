@@ -12,7 +12,7 @@
 
 /*===== Layout Style =====*/
 body {
-    background: url(../images/bg_body.jpg) #3c0701;
+    background: #3c0701;
     font-family: 'Cabin', sans-serif;
     line-height: 1.15;
     font-size: 14px;
@@ -78,11 +78,6 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.wrapper {
-    position: relative;
-    background: url(../images/background.png) no-repeat top center;
-    /*height: 100vh;*/
-}
 .kl_table {
     display: table;
     width: 100%;
@@ -91,6 +86,17 @@ h1, h2, h3, h4, h5, h6, p {
 .kl_tablecell {
     display: table-cell;
     vertical-align: middle;
+}
+.kl_background_home {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(../images/bg_body.jpg);
+    /*background: url(../images/bg_body.jpg) #3c0701 no-repeat;*/
+    background-position: center;
+    background-attachment: fixed;
+}
+.kl_background_child {
+    background: url(../images/BG_2.jpg) #3c0701 no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Header */
@@ -142,10 +148,13 @@ h1, h2, h3, h4, h5, h6, p {
 .kl_menu_content .kl_menu_item .kl_menu_link {
     color: rgba(255, 236, 141, 0.15);
     font-size: 32px;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .kl_menu_content .kl_menu_item {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-right: 1px solid rgb(116, 0, 7);
@@ -163,11 +172,12 @@ h1, h2, h3, h4, h5, h6, p {
 .kl_menu_content .kl_menu_item .kl_menu_link.kl_menu_active:after {
     content: "";
     width: 100%;
-    height: 1px;
+    height: 8px;
     display: block;
-    background: #fff;
+    background: #b9701e;
+    border: 1px solid #000;
     position: absolute;
-    bottom: -35px;
+    bottom: -49px;
     right: 0;
 }
 
@@ -373,6 +383,25 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* ***** Rewards ***** */
+.kl_rewards_title span {
+    font-size: 42px;
+    font-family: "iCielBrandonText";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    background: -webkit-gradient(linear, left top, right top, from(#5f4406), color-stop(6%, #ffe49d), color-stop(11%, #ffe49d), color-stop(25%, #dbb570), color-stop(29%, #ffe49d), color-stop(30%, #ffe49d), color-stop(32%, #fef0cf), color-stop(33%, #dbb570), color-stop(35%, #ffe49d), color-stop(41%, #ffe49d), color-stop(69%, #eedcb1), color-stop(73%, #fef0cf), color-stop(80%, #eedcb1), color-stop(86%, #ffe49d), color-stop(93%, #ffe49d), color-stop(94%, #dbb570));
+    background: linear-gradient(90deg, #5f4406 0%, #ffe49d 6%, #ffe49d 11%, #dbb570 25%, #ffe49d 29%, #ffe49d 30%, #fef0cf 32%, #dbb570 33%, #ffe49d 35%, #ffe49d 41%, #eedcb1 69%, #fef0cf 73%, #eedcb1 80%, #ffe49d 86%, #ffe49d 93%, #dbb570 94%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5f4406",endColorstr="#dbb570",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.kl_rewards_title span:after {
+    content: url("../images/star_text.png");
+    display: block;
+    margin: 0 auto;
+}
+
 .kl_autoplay_style {
     position: relative;
 }
@@ -611,27 +640,22 @@ h1, h2, h3, h4, h5, h6, p {
   height: 717px;
   z-index: 187;
 }
-
 .kl_main_contact_ct {
     width: 680px;
 }
 .kl_text_contact {
     margin-bottom: 50px;
-    font-size: 24px;
+    font-size: 8px;
     font-family: "iCielBrandonText";
     color: rgb(255, 236, 141);
     font-weight: bold;
+    text-align: center;
     text-shadow: 0px 1px 0.98px rgba(15, 15, 15, 0.004);
-    background: -webkit-gradient(linear, left top, right top, from(#5f4406), color-stop(6%, #ffe49d), color-stop(11%, #ffe49d), color-stop(25%, #dbb570), color-stop(29%, #ffe49d), color-stop(30%, #ffe49d), color-stop(32%, #fef0cf), color-stop(33%, #dbb570), color-stop(35%, #ffe49d), color-stop(41%, #ffe49d), color-stop(69%, #eedcb1), color-stop(73%, #fef0cf), color-stop(80%, #eedcb1), color-stop(86%, #ffe49d), color-stop(93%, #ffe49d), color-stop(94%, #dbb570));
-    background: linear-gradient(90deg, #5f4406 0%, #ffe49d 6%, #ffe49d 11%, #dbb570 25%, #ffe49d 29%, #ffe49d 30%, #fef0cf 32%, #dbb570 33%, #ffe49d 35%, #ffe49d 41%, #eedcb1 69%, #fef0cf 73%, #eedcb1 80%, #ffe49d 86%, #ffe49d 93%, #dbb570 94%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5f4406",endColorstr="#dbb570",GradientType=1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -moz-transform: matrix( 2.9665269638561,0,0,2.96652696385608,0,0);
+    -webkit-transform: matrix( 2.9665269638561,0,0,2.96652696385608,0,0);
+    -ms-transform: matrix( 2.9665269638561,0,0,2.96652696385608,0,0);
 }
 .kl_qrCode {
-    background: url("../images/bg_qrcode.png");
-    width: 264px;
-    height: 265px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -663,17 +687,19 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 45px;
 }
 .kl_contactNow p {
-    font-size: 11.696px;
+    font-size: 10.234px;
+    position: relative;
     font-family: "iCielBrandonText";
     color: rgb(255, 255, 255);
-    text-decoration: underline;
     line-height: 4.432;
     text-align: center;
     -moz-transform: matrix( 2.7360026307562,0,0,2.7360026307561,0,0);
     -webkit-transform: matrix( 2.7360026307562,0,0,2.7360026307561,0,0);
     -ms-transform: matrix( 2.7360026307562,0,0,2.7360026307561,0,0);
 }
-
+.kl_contactNow p span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
 .kl_contactNow_ct {
     padding: 0 80px;
     margin-top: 45px;
@@ -1109,10 +1135,8 @@ h1, h2, h3, h4, h5, h6, p {
         background: #5b0012;
     }
     .wrapper2 {
-        width: auto;
         background: url(../images/bg2_mb.jpg) no-repeat top center;
         max-width: 750px;
-        height: auto;
     }
     .kl_hide_moblie {
         display: none;
@@ -1176,7 +1200,6 @@ h1, h2, h3, h4, h5, h6, p {
         width: auto;
     }
     .kl_text_contact {
-        font-size: 32px;
         text-align: center;
     }
     .kl_main_contact .kl_btn {
@@ -1499,7 +1522,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
-.lucky-wrap .randomizer-wrap .random-input span {
+/*.lucky-wrap .randomizer-wrap .random-input span {
     position: relative;
 }
 .lucky-wrap .randomizer-wrap .random-input span:before {
@@ -1543,3 +1566,4 @@ h1, h2, h3, h4, h5, h6, p {
     from {right: 0px;}
     to {right: 600px;}
 }
+*/

@@ -13,7 +13,7 @@
 
     // Zoom Web on in browser
     Zoom();
-    $(window).resize(function() {
+    $(window).on('load resize', function() {
         Zoom();
     });
 
@@ -26,7 +26,7 @@
         }
     }
     ChangeWiewport();
-    $(window).resize(function() {
+    $(window).on('load resize', function() {
         ChangeWiewport();
     });
 
