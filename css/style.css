@@ -563,7 +563,7 @@ h1, h2, h3, h4, h5, h6, p {
     -ms-transition: all 0.4s ease-out 0s;
 }
 .kl_content_item .kl_content_link {
-    font-size: 20px;
+    font-size: 26px;
     color: rgba(255, 236, 141, 0.15);
     font-weight: bold;
     transition: all 0.4s ease-out 0s;
@@ -591,7 +591,7 @@ h1, h2, h3, h4, h5, h6, p {
     left: 0;
 }
 .kl_content_ct {
-    font-size: 14px;
+    font-size: 26px;
     color: #fff;
     line-height: 1.5;
     height: 953px;
@@ -611,7 +611,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .kl_content_ct p {
     margin-bottom: 1rem;
-    font-size: 18px;
 }
 .kl_content_ct_head {
     text-transform: uppercase;
@@ -724,7 +723,7 @@ h1, h2, h3, h4, h5, h6, p {
     vertical-align: top;
 }
 .kl_contactNow ul:last-child {
-    margin-left: 0;
+    margin-left: 10px;
 }
 .kl_contactNow ul li {
     margin-bottom: 8px;
@@ -737,7 +736,7 @@ h1, h2, h3, h4, h5, h6, p {
     vertical-align: middle;
 }
 .kl_contactNow ul li span {
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 18px;
     font-family: "Tahoma";
 }
@@ -1133,6 +1132,9 @@ h1, h2, h3, h4, h5, h6, p {
 @media (max-width: 750px) {
     #Zoom {
         zoom: 1 !important;
+        width: 100% !important;
+        transform-origin: unset !important;
+        transform: none !important;
     }
 }
 

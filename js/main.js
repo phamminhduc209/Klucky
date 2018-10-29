@@ -1,24 +1,6 @@
 (function($){
     "use strict";
 
-    function Zoom() {
-        var winHeight = $(window).height();
-        var zoom = 1;
-        var bodyMaxHeight = 1331;
-        zoom = winHeight/bodyMaxHeight;
-        $('#Zoom').css({
-            'zoom': zoom,
-            '-moz-transform': 'scale('+zoom+')',  /* Firefox */
-            'transform-origin': 'center top 0px'
-        });
-    }
-
-    // Zoom Web on in browser
-    Zoom();
-    $(window).on('load resize', function() {
-        Zoom();
-    });
-
     // Change viewport
     function ChangeWiewport() {
         if (screen.width < 750) {
@@ -28,8 +10,34 @@
         }
     }
     ChangeWiewport();
-    $(window).on('load resize', function() {
+    $(window).resize(function() {
         ChangeWiewport();
+    });
+
+    // Zoom Web on in all browser
+    function Zoom() {
+        var winHeight = $(window).height();
+        var zoom = 1;
+        var bodyMaxHeight = 1331;
+        zoom = winHeight/bodyMaxHeight;
+        /* Firefox */
+        var winWidth = $(window).width();
+        var widthFirefox = winWidth/zoom;
+        if(navigator.userAgent.indexOf("Firefox") != -1) {
+            $('#Zoom').css({
+                '-moz-transform': 'scale('+zoom+')',  /* Firefox */
+                'transform-origin': '0 0',
+                'width': widthFirefox,
+            });
+        } else {
+            $('#Zoom').css({
+                'zoom': zoom,
+            });
+        }
+    }
+    Zoom();
+    $(window).on('load resize', function() {
+        Zoom();
     });
 
     // Slider Rewards
