@@ -8,6 +8,8 @@
         zoom = winHeight/bodyMaxHeight;
         $('#Zoom').css({
             'zoom': zoom,
+            '-moz-transform': 'scale('+zoom+')',  /* Firefox */
+            'transform-origin': 'center top 0px'
         });
     }
 

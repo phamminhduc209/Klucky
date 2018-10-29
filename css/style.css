@@ -18,7 +18,7 @@ body {
     font-size: 14px;
     color: #fff;
     font-weight: 400;
-    overflow-x: hidden;
+    overflow: hidden;
     margin: 0 auto;
     position: relative;
     background-repeat: no-repeat;
@@ -473,10 +473,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .kl_itemGift .kl_amountGift {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 10px;
     color: #fff;
     font-family: "Tahoma";
+    font-size: 17px;
 }
 .kl_btn_gr {
     position: absolute;
@@ -562,7 +563,7 @@ h1, h2, h3, h4, h5, h6, p {
     -ms-transition: all 0.4s ease-out 0s;
 }
 .kl_content_item .kl_content_link {
-    font-size: 16px;
+    font-size: 20px;
     color: rgba(255, 236, 141, 0.15);
     font-weight: bold;
     transition: all 0.4s ease-out 0s;
@@ -610,6 +611,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .kl_content_ct p {
     margin-bottom: 1rem;
+    font-size: 18px;
 }
 .kl_content_ct_head {
     text-transform: uppercase;
