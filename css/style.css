@@ -404,13 +404,13 @@ h1, h2, h3, h4, h5, h6, p {
     display: block;
     margin: 0 auto;
     position: absolute;
-    bottom: -38px;
-    right: 10px;
+    bottom: -35px;
+    right: 75px;
 }
 .kl_rewards_title2 span:after {
     content: url("../images/star_text2.png");
-    bottom: -37px;
-    right: 10px;
+    bottom: -40px;
+    right: 70px;
 }
 
 .kl_autoplay_style {
@@ -1139,7 +1139,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* ***** RESPONSIVE ***** */
-/* ***** Menu ***** */
 @media (max-width: 1366px) {
     .wrapper2 {
         width: auto;
@@ -1659,7 +1658,9 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
-/*.lucky-wrap .randomizer-wrap .random-input span {
+
+
+.lucky-wrap .randomizer-wrap .random-input span {
     position: relative;
 }
 .lucky-wrap .randomizer-wrap .random-input span:before {
@@ -1703,4 +1704,3 @@ h1, h2, h3, h4, h5, h6, p {
     from {right: 0px;}
     to {right: 600px;}
 }
-*/
