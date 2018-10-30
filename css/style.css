@@ -841,7 +841,7 @@ h1, h2, h3, h4, h5, h6, p {
     vertical-align: top;
 }
 .kl_contactNow ul:last-child {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 .kl_contactNow ul li {
     margin-bottom: 8px;
@@ -854,8 +854,8 @@ h1, h2, h3, h4, h5, h6, p {
     vertical-align: middle;
 }
 .kl_contactNow ul li span {
-    margin-left: 10px;
-    font-size: 18px;
+    margin-left: 5px;
+    font-size: 20px;
     font-family: "Tahoma";
 }
 
@@ -990,19 +990,19 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .lucky-wrap .randomizer-wrap .random-input input::-webkit-input-placeholder {
   color: #e8c57e;
-  font-size: 40px;
+  font-size: 39.68px;
 }
 .lucky-wrap .randomizer-wrap .random-input input::-moz-placeholder {
   color: #e8c57e;
-  font-size: 40px;
+  font-size: 39.68px;
 }
 .lucky-wrap .randomizer-wrap .random-input input:-ms-input-placeholder {
   color: #e8c57e;
-  font-size: 40px;
+  font-size: 39.68px;
 }
 .lucky-wrap .randomizer-wrap .random-input input:-moz-placeholder {
   color: #e8c57e;
-  font-size: 40px;
+  font-size: 39.68px;
 }
 .lucky-wrap .randomizer-wrap .random-input input:focus::-webkit-input-placeholder { color:transparent; }
 .lucky-wrap .randomizer-wrap .random-input input:focus:-moz-placeholder { color:transparent; }
@@ -1328,6 +1328,7 @@ h1, h2, h3, h4, h5, h6, p {
     .kl_formInformation .kl_form_field {
         flex: auto;
         max-width: 100%;
+        font-size: 22px;
     }
     .kl_formInformation .form-inline_col {
         width: 50%;
@@ -1702,7 +1703,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
-/*.lucky-wrap .randomizer-wrap .random-input span {
+.lucky-wrap .randomizer-wrap .random-input span {
     position: relative;
 }
 .lucky-wrap .randomizer-wrap .random-input span:before {
@@ -1711,11 +1712,12 @@ h1, h2, h3, h4, h5, h6, p {
     position: absolute;
     top: 0;
     left: 0;
-    -webkit-animation: lefttoright 5s infinite;
+    display: none;
+    /*-webkit-animation: lefttoright 5s infinite;
     -webkit-animation-timing-function: linear;
     animation: lefttoright 5s infinite;
-    animation-timing-function: linear;
-    display: none;
+    animation-timing-function: linear;*/
+    
 }
 .lucky-wrap .randomizer-wrap .random-input span:after {
     content: url(../images/linear.png);
@@ -1728,6 +1730,7 @@ h1, h2, h3, h4, h5, h6, p {
     animation: righttoleft 5s infinite;
     animation-timing-function: linear;
     display: none;
+    
 }
 @-webkit-keyframes lefttoright {
     from {left: 0px;}
@@ -1745,4 +1748,4 @@ h1, h2, h3, h4, h5, h6, p {
 @keyframes righttoleft {
     from {right: 0px;}
     to {right: 600px;}
-}*/
+}

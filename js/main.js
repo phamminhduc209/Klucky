@@ -4,7 +4,7 @@
     // Change viewport
     function ChangeWiewport() {
         if (screen.width < 750) {
-            $("#viewport").attr("content", "width=750");
+            $("#viewport").attr("content", "width=750, maximum-scale=1.0, user-scalable=0");
         }else{
             $("#viewport").attr("content", "width=device-width, initial-scale=1");
         }
