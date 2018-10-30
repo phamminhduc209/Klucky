@@ -10,6 +10,7 @@
 @import url(../lib/slick/slick.css);
 @import url(../lib/slick/slick-theme.css);
 @import url(../font/fontawesome/css/font-awesome.min.css);
+@import url(../lib/jquery-ui/jquery-ui.css);
 
 /*===== Layout Style =====*/
 body {
@@ -337,12 +338,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .kl_formInformation .form-inline_col {
     width: 50%;
+    padding: 0 15px;
 }
 
 .kl_formInformation .kl_form_input {
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
     box-shadow: inset 0px 1px 1.5px 0.5px rgba(32, 13, 2, 0.44);
+    width: 100%;
 }
 .kl_formInformation .form-control:focus {
     background-color: rgb(255, 255, 255);
@@ -1333,8 +1336,7 @@ h1, h2, h3, h4, h5, h6, p {
     .kl_formInformation .form-inline_col {
         width: 50%;
         text-align: left !important;
-        padding-left: 0 !important;
-        padding: 0 5px;
+        padding: 0 15px;
     }
     .kl_formInformation .form-inline_col .kl_form_input {
         width: 100%;
