@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .kl_slider .kl_slide_item .kl_nameGift {
     color: #e7bd6e;
-    font-size: 18px;
+    font-size: 20px;
     background: rgba(0, 0, 0, 0.4);
     text-align: center;
     padding: 8px 55px;
@@ -528,6 +528,27 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Item Gift */
+.kl_listGift {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.kl_listGift_ct {
+    max-height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 20px;
+}
+.kl_listGift_ct::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #9a2500;
+}
+.kl_listGift_ct::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+.kl_listGift_ct::-webkit-scrollbar-thumb {
+    background-color: rgb(86, 0, 1);
+}
 .kl_listGift .row {
     margin-right: -10px;
     margin-left: -10px;
@@ -562,6 +583,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .kl_itemGift .kl_nameGift {
     color: #e7bd6e;
+    font-size: 20px;
     background: rgba(0, 0, 0, 0.4);
     text-align: center;
     padding: 8px;
@@ -1658,9 +1680,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
-
-
-.lucky-wrap .randomizer-wrap .random-input span {
+/*.lucky-wrap .randomizer-wrap .random-input span {
     position: relative;
 }
 .lucky-wrap .randomizer-wrap .random-input span:before {
@@ -1703,4 +1723,4 @@ h1, h2, h3, h4, h5, h6, p {
 @keyframes righttoleft {
     from {right: 0px;}
     to {right: 600px;}
-}
+}*/
