@@ -1357,6 +1357,14 @@ h1, h2, h3, h4, h5, h6, p {
     .kl_formInformation .kl_form_field {
         flex: auto;
         max-width: 100%;
+        font-size: 25px;
+    }
+    .kl_formInformation .kl_form_input {
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px !important;
+    }
+    .kl_text_while {
         font-size: 22px;
     }
     .kl_formInformation .form-inline_col {
