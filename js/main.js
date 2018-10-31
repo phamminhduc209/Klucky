@@ -47,5 +47,8 @@
         autoplay: false,
         autoplaySpeed: 2000,
     });
+
+    $('#datepicker').datepicker();
+    $('#datepicker2').datepicker();
     
 })(jQuery); // End of use strict
