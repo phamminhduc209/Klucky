@@ -4,13 +4,13 @@
     // Change viewport
     function ChangeWiewport() {
         if (screen.width < 750) {
-            $("#viewport").attr("content", "width=750, maximum-scale=1.0, initial-scale=1");
+            $("#viewport").attr("content", "width=750");
         }else{
             $("#viewport").attr("content", "width=device-width, initial-scale=1");
         }
     }
     ChangeWiewport();
-    $(window).resize(function() {
+    $(window).on('load resize', function() {
         ChangeWiewport();
     });
 
@@ -24,7 +24,6 @@
         var winWidth = $(window).width();
         var widthFirefox = winWidth/zoom;
         var winWidths = $(window).height();
-        console.log(winWidths);
         if(navigator.userAgent.indexOf("Firefox") != -1) {
             $('#Zoom').css({
                 '-moz-transform': 'scale('+zoom+')',  /* Firefox */
@@ -56,5 +55,31 @@
     if ($('.wrapper2').hasClass('wrapper_kl_rewards')) {
         $('.wrapper2').closest('body').addClass('kl_rewards_body');   
     }
+
+    // Find all YouTube videos
+    var $allVideos = $("iframe[src^='//www.youtube.com']"),
+        // The element that is fluid width
+        $fluidEl = $("body");
+    // Figure out and save aspect ratio for each video
+    $allVideos.each(function() {
+        $(this)
+        .data('aspectRatio', this.height / this.width)
+        // and remove the hard coded width/height
+        .removeAttr('height')
+        .removeAttr('width');
+    });
+
+    // When the window is resized
+    $(window).resize(function() {
+        var newWidth = $fluidEl.width();
+        // Resize all videos according to their own aspect ratio
+        $allVideos.each(function() {
+            var $el = $(this);
+            $el
+            .width(newWidth)
+            .height(newWidth * $el.data('aspectRatio'));
+        });
+        // Kick off one resize to fix all videos on page load
+    }).resize();
     
 })(jQuery); // End of use strict
