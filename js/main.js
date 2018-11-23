@@ -41,6 +41,38 @@
         Zoom();
     });
 
+    // $(function() {
+    //     $(".hasDatepicker").click(function() {
+    //         var CssTop = $('#ui-datepicker-div').css('top').replace('px','');
+    //         var CssLeft = $('#ui-datepicker-div').css('left').replace('px','');
+    //         var cssZoom = $('#Zoom').css('zoom').replace('px','');
+
+    //         var newCssTop = CssTop * cssZoom;
+    //         var newCssLeft = CssLeft * cssZoom;
+
+    //         if(navigator.userAgent.indexOf("Firefox") != -1) {
+    //             var cssTransform = $('#Zoom').css('moz-transform').replace('px','');
+    //             var newCssTop_Transform = CssTop * cssTransform;
+    //             var newCssLeft_Transform = CssLeft * cssTransform;
+    //             $(this).parents('body').find('#ui-datepicker-div').css({
+    //                 'top'   : newCssTop_Transform,
+    //                 'left'  : newCssLeft_Transform,
+    //             })
+    //         } else {
+    //             $(this).parents('body').find('#ui-datepicker-div').css({
+    //                 'top'   : newCssTop,
+    //                 'left'  : newCssLeft,
+    //             });
+    //             return false;
+    //         }
+
+    //         // $(this).parents('body').find('#ui-datepicker-div').css({
+    //         //     'top'   : newCssTop,
+    //         //     'left'  : newCssLeft,
+    //         // })
+    //     });
+    // });
+
     // Slider Rewards
     $('.kl_autoplay').slick({
         slidesToShow: 2,
@@ -81,5 +113,11 @@
         });
         // Kick off one resize to fix all videos on page load
     }).resize();
+
+    // function NewCSS() {
+    //     var CssTop = $('#ui-datepicker-div').css('top');
+    //     console.log('top',CssTop);
+    // }
+    // NewCSS();
     
 })(jQuery); // End of use strict

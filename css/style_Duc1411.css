@@ -395,17 +395,14 @@ h1, h2, h3, h4, h5, h6, p {
 .kl_modal_information_home .kl_form_name {
     font-size: 1.3rem;
 }
-
 .kl_modal_information_home .form-group {
     margin-bottom: 15px;
 }
-
 .kl_modal_information_home .kl_form_input {
     height: 45px;
     line-height: 45px;
     font-size: 1.4rem;
 }
-
 .kl_formInformation .form-control:focus {
     background-color: rgb(255, 255, 255);
     box-shadow: inset 0px 1px 1.5px 0.5px rgba(32, 13, 2, 0.44);   
@@ -483,7 +480,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .kl_rewards_title2 span:after {
     content: url("../images/star_text2.png");
-    bottom: -40px;
+  	bottom: -40px;
     right: -95px;
 }
 
@@ -1274,8 +1271,8 @@ h1, h2, h3, h4, h5, h6, p {
         padding-left: 25px;
     }
     .kl_listGift {
-        width: auto;
-        padding: 0 15px;
+		width: auto;
+		padding: 0 15px;
     }
 }
 @media (max-width: 1024px) {
@@ -1401,7 +1398,7 @@ h1, h2, h3, h4, h5, h6, p {
         max-width: 750px;
     }
     .wrapper_kl_rewards {
-        background-position: bottom center;
+    	background-position: bottom center;
     }
     .kl_hide_moblie {
         display: none;
@@ -1678,12 +1675,12 @@ h1, h2, h3, h4, h5, h6, p {
         font-size: 30px;
     }
     .kl_contactNow ul li {
-        margin-bottom: 15px;
+    	margin-bottom: 15px;
     }
     .kl_contactNow ul:last-child {
-        margin-left: 0;
-        margin-top: 15px;
-    }
+	    margin-left: 0;
+	    margin-top: 15px;
+	}
 }
 
 @media (max-width: 568px) {
@@ -1815,26 +1812,8 @@ h1, h2, h3, h4, h5, h6, p {
         width: auto;
     }
     .kl_listGift .kl_Giftitem {
-        width: 100%;
-    }
-}
-
-.kl_main2_getnumber .kl_text_contact {
-    margin-bottom: 25px;
-}
-.kl_main2_getnumber .kl_modal_information_home .kl_form_input {
-    height: 40px;
-    line-height: 40px;
-    font-size: 1.2rem;
-}
-.kl_main2_getnumber .kl_modal_information_home .kl_form_name {
-    font-size: 1.2rem;
-}
-
-@media only screen and (min-width: 768px) {
-    .kl_main2_getnumber .kl_main_contact {
-        padding: 20px;
-    }
+	    width: 100%;
+	}
 }
 
 /*.lucky-wrap .randomizer-wrap .random-input span {
@@ -1883,3 +1862,6 @@ h1, h2, h3, h4, h5, h6, p {
     from {right: 0px;}
     to {right: 600px;}
 }*/
+label.required{
+    display: none;
+}
