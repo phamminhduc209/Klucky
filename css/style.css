@@ -1837,6 +1837,69 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
+
+.kl_main2_sign {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 700px;
+}
+.kl_main2_sign .kl_formInformation {
+    padding: 0 70px;
+}
+@media only screen and (min-width: 1024px) {
+    .kl_main2_sign {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding-top: 150px;
+    }
+    .kl_main2_sign .kl_main_contact {
+        min-height: 400px;
+        padding: 20px 10px;
+    }
+    .kl_main2_sign .kl_text_contact {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .kl_main2_sign .kl_formInformation {
+        padding: 0 140px;
+    }
+    .kl_main2_sign  .kl_modal_information_home .form-group {
+        margin-bottom: 10px;
+    }
+    .kl_main2_sign  .kl_modal_information_home .kl_form_name {
+        font-size: .9rem;
+    }
+    .kl_main2_sign  .kl_modal_information_home .kl_form_input {
+        height: 30px;
+        line-height: 30px;
+        font-size: 1rem;
+    }
+    .kl_main2_sign  .kl_modal_information_home .required {
+        font-size: 0.8rem;
+    }
+    .kl_main2_sign .kl_register .kl_text_while {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    .kl_main2_sign .kl_register .btn-group .kl_btn {
+        display: inline-block;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .kl_main2_sign {
+        width: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }    
+}
+
 /*.lucky-wrap .randomizer-wrap .random-input span {
     position: relative;
 }
